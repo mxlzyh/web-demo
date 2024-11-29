@@ -17,10 +17,10 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: clone git
-      run: |
-        git clone https://github.com/mxlzyh/web-demo.git
-        cd ./web-demo/
+      run: git clone https://github.com/mxlzyh/web-demo.git
     - name: maven 
-      run: mvn clean install -DskipTests
+      run: |
+      cd ./web-demo/
+      mvn clean install -DskipTests
     - name: start web_demo
       run: java -jar ./target/demo-0.0.1.jar

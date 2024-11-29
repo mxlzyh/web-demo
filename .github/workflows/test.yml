@@ -19,7 +19,7 @@ jobs:
     - name: clone git
       run: |
         git clone https://github.com/mxlzyh/web-demo.git
-        cd web-demo/web-demo/
+        cd ./web-demo/web-demo/
     - name: maven 
       run: mvn clean install -DskipTests
     - name: start web_demo

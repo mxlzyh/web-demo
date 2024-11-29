@@ -18,8 +18,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: clone git
       run: |
-        mkdir /test
-        cd /test
         git clone https://github.com/mxlzyh/web-demo.git
         cd web-demo/
     - name: maven 

@@ -23,4 +23,6 @@ jobs:
         cd web-demo/
         mvn clean install -DskipTests
     - name: start web_demo
-      run: java -jar ./target/demo-0.0.1.jar
+      run: |
+        cd web-demo/
+        java -jar ./target/demo-0.0.1.jar
